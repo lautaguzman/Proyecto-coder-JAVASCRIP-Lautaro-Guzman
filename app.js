@@ -89,61 +89,40 @@ while (selecciona != "no") {
 const compra = carrito.reduce((acc, elem) => acc + elem.precio * elem.unidades, 0)
 alert(`el total de su compra es ${compra}`) */
 
-
-
-
 /*----------------FORMULARIO DE COMPRA------------*/
-const formulario = document.querySelector("#formulario");
+/*const formulario = document.querySelector("#formulario");
 console.log(formulario);
 
-
-const titulo = document.querySelector("title").textContent = "camisetas oficiales del mundial";
+const titulo = (document.querySelector("title").textContent =
+  "camisetas oficiales del mundial");
 console.log(titulo);
 
-const correo = document.querySelector("#email").textContent = "correo electronico";
-console.log(correo);
+const correo = (document.querySelector("#email").textContent =
+  "correo electronico");
+console.log(correo);*/
 
-
-let nuevoTitulo = document.createElement("div");
-nuevoTitulo.innerHTML = "<div> camisetas del mundial</div>";
-document.body.appendChild(nuevoTitulo);
-
-
-const lista = document.querySelector("#equipamento");
+/*const lista = document.querySelector("#equipamento");
 const camisetas = [
-    "camiseta titular de argentina",
-    "camiseta suplente de argentina",
-    "camiseta titular de brasil",
-    "camiseta titular de portugal"
-
+  "camiseta titular de argentina",
+  "camiseta suplente de argentina",
+  "camiseta titular de brasil",
+  "camiseta titular de portugal",
 ];
 
 for (let camiseta of camisetas) {
-    let listado = document.createElement("li")
-    listado.innerHTML = camiseta;
-    lista.appendChild(listado);
+  let listado = document.createElement("li");
+  listado.innerHTML = camiseta;
+  lista.appendChild(listado);
 }
+*/
 
+/*let nuevoTitulo = document.createElement("div");
+nuevoTitulo.innerHTML = "<div></div>";
+document.body.appendChild(nuevoTitulo);*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const formulario = document.getElementById(`form`);
+formulario.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let correo = document.getElementById(`email-form`).value;
+  console.log(correo);
+});

@@ -1,128 +1,101 @@
-/*alert("Bienvenido a la tienda oficial del mundial")
+const stock = document.getElementById("productos");
 
+const listaCamisetas = [
+  {
+    id: 1,
+    nombre: "Camiseta de Argentina",
+    precio: 20000,
+    img: "",
+  },
 
-const camisetas = [
-    { nombre: "camiseta titular de argentina", precio: 16000 },
-    { nombre: "camiseta suplente de argentina", precio: 12000 },
-    { nombre: "camiseta titular de brasil", precio: 15000 },
-    { nombre: "camiseta titular de portugal", precio: 14000 },
+  {
+    id: 2,
+    nombre: "Camiseta de Alemania",
+    precio: 15000,
+  },
 
+  {
+    id: 3,
+    nombre: "Camiseta de Belgica",
+    precio: 16000,
+  },
+  {
+    id: 4,
+    nombre: "Camiseta de Brasil",
+    precio: 20000,
+  },
+  {
+    id: 5,
+    nombre: "Camiseta de Eecuador",
+    precio: 12000,
+  },
+  {
+    id: 6,
+    nombre: "Camiseta de Espania",
+    precio: 16000,
+  },
+  {
+    id: 7,
+    nombre: "Camiseta de Ghana",
+    precio: 10000,
+  },
+  {
+    id: 8,
+    nombre: "Camiseta de Inglaterra",
+    precio: 13000,
+  },
+  {
+    id: 9,
+    nombre: "Camiseta de Japon",
+    precio: 13000,
+  },
+  {
+    id: 10,
+    nombre: "Camiseta de Marruecos",
+    precio: 8000,
+  },
+  {
+    id: 11,
+    nombre: "Camiseta de Mexico",
+    precio: 9000,
+  },
+  {
+    id: 12,
+    nombre: "Camiseta de Senegal",
+    precio: 8000,
+  },
+  {
+    id: 13,
+    nombre: "Camiseta de Serbia",
+    precio: 10000,
+  },
+  {
+    id: 14,
+    nombre: "Camiseta de Suiza",
+    precio: 9000,
+    img: "",
+  },
+  {
+    id: 15,
+    nombre: "Camiseta de Uruguay",
+    precio: 13000,
+  },
 ];
 
-let carrito = []
+let carrito = [];
 
-let selecciona = prompt("desea adquirir alguna camiseta si o no ")
+listaCamisetas.forEach((camisetas) => {
+  let content = document.createElement("div");
+  content.innerHTML = `
+  <div class="col-6"> 
+  <img src="${camisetas.img}">
+  <h3>${camisetas.nombre}</h3>
+  <p>${camisetas.precio}$</p>
+  </div>
+  `;
+  const botonComprar = document.createElement("button");
+  botonComprar.innerText = "Comprar";
+  content.append(botonComprar);
 
-while (selecciona != "si" && selecciona != "no") {
-    alert("ingrese si o no")
-    selecciona = prompt("indica por si o no")
-
-}
-
-if (selecciona == "si") {
-    alert("lista de camisetas en stock")
-    let todasLasCamisetas = camisetas.map((camisetas) => camisetas.nombre + "" + camisetas.precio + "$");
-    alert(todasLasCamisetas.join(" - "))
-} else if (selecciona == "no") {
-    alert("gracias por su visita!")
-}
-
-while (selecciona != "no") {
-    let camisetas = prompt("agrega una camiseta al carrito")
-    let precio = 0
-
-
-    if (camisetas == "camiseta titular de argentina" ||
-        camisetas == "camiseta suplente de argentina" ||
-        camisetas == "camiseta titular de brasil" ||
-        camisetas == "camiseta titular de portugal") {
-        switch (camisetas) {
-            case "camiseta titular de argentina":
-
-                precio = 16000
-
-                break;
-
-            case "camiseta suplente de argentina":
-
-                precio = 12000
-
-                break;
-            case "camiseta titular de brasil":
-
-                precio = 15000
-
-                break;
-
-            case "camiseta titular de portugal":
-
-                precio = 14000
-
-                break;
-
-            default:
-                break;
-        }
-        let unidades = parseInt(prompt("cuantas camisetas desea comprar"))
-
-        carrito.push({ camisetas, unidades, precio })
-
-        console.log(carrito)
-    } else {
-        alert("camiseta no disponible por el momento")
-    }
-
-    selecciona = prompt("¿quiere agregar otra camiseta?")
-
-
-    while (selecciona === "no") {
-        alert("gracias por su compra, vuelva pronto")
-
-        carrito.forEach((carritoFinal) => {
-            alert(`camisetas: ${carritoFinal.camisetas}, unidad: ${carritoFinal.unidades}, total a pagar: ${carritoFinal.unidades * carritoFinal.precio}`)
-        })
-        break;
-    }
-}
-
-
-const compra = carrito.reduce((acc, elem) => acc + elem.precio * elem.unidades, 0)
-alert(`el total de su compra es ${compra}`) */
-
-/*----------------FORMULARIO DE COMPRA------------*/
-/*const formulario = document.querySelector("#formulario");
-console.log(formulario);
-
-const titulo = (document.querySelector("title").textContent =
-  "camisetas oficiales del mundial");
-console.log(titulo);
-
-const correo = (document.querySelector("#email").textContent =
-  "correo electronico");
-console.log(correo);*/
-
-/*const lista = document.querySelector("#equipamento");
-const camisetas = [
-  "camiseta titular de argentina",
-  "camiseta suplente de argentina",
-  "camiseta titular de brasil",
-  "camiseta titular de portugal",
-];
-
-for (let camiseta of camisetas) {
-  let listado = document.createElement("li");
-  listado.innerHTML = camiseta;
-  lista.appendChild(listado);
-}
-*/
-
-/*let nuevoTitulo = document.createElement("div");
-nuevoTitulo.innerHTML = "<div></div>";
-document.body.appendChild(nuevoTitulo);*/
-
-const formulario = document.getElementById(`form`);
-formulario.addEventListener("submit", function (e) {
-  e.preventDefault();
-  let correo = document.getElementById(`email-form`).value;
-  console.log(correo);
+  stock.append(content);
 });

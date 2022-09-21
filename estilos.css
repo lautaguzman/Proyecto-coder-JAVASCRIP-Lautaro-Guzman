@@ -22,12 +22,45 @@ body {
     margin-top: 16px;
 }
 
-.productos-estilo h3 {
-    border: solid white 1px;
+
+.productos-estilo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.tarjeta {
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 350px;
+    height: 350px;
+}
+
+.tarjeta p {
+    color: white;
+}
+
+.tarjeta h3 {
+
+    border: solid black 1px;
     background-color: white;
     color: black;
     text-align: center;
+    margin-bottom: 30px;
+    margin: 25px;
+
+
 }
+
+.tarjeta button{
+    margin-bottom: 30px;
+    color: white;
+    background-color: black;
+    width: 50%;
+} 
 
 
 

@@ -1,6 +1,8 @@
 const stock = document.getElementById("productos");
 
+const verCarrito = document.getElementById("verCarrito");
 
+const modalContainer = document.getElementById("modal-container");
 let carrito = [];
 
 listaCamisetas.forEach((camisetas) => {
@@ -29,4 +31,21 @@ listaCamisetas.forEach((camisetas) => {
     });
     console.log(carrito);
   });
+});
+
+verCarrito.addEventListener("click", () => {
+  const modalHeader = document.createElement("div");
+  modalHeader.className = "modal-header";
+  modalHeader.innerHTML = `
+  <h1 class="modal-header-titulo">Carrito</h1>
+  
+  `;
+
+  modalContainer.append(modalHeader);
+
+  const modalButton = document.createElement("h1");
+  modalButton.innerText = "x";
+  modalButton.className = "modal-header-button";
+
+  modalHeader.append(modalButton);
 });

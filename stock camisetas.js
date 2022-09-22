@@ -1,43 +1,43 @@
 const listaCamisetas = [
-    {
-      id: 1,
-      nombre: "Camiseta de Argentina",
-      precio: 20000,
-      img: "imagenes/argentina/argentina titular.jpg",
-    },
-  
-    {
-      id: 2,
-      nombre: "Camiseta de Alemania",
-      precio: 15000,
-      img: "imagenes/alemania/alemania titular.jpg",
-    },
-  
-    {
-      id: 3,
-      nombre: "Camiseta de Belgica",
-      precio: 16000,
-      img: "imagenes/belgica/belgica titular.jpg",
-    },
-    {
-      id: 4,
-      nombre: "Camiseta de Brasil",
-      precio: 20000,
-      img: "imagenes/brasil/brasil titular.jpg",
-    },
-    {
-      id: 5,
-      nombre: "Camiseta de Ecuador",
-      precio: 12000,
-      img: "imagenes/ecuador/ecuador titular.jpg",
-    },
-    {
-      id: 6,
-      nombre: "Camiseta de Espania",
-      precio: 16000,
-      img: "imagenes/españa/españa titular.jpg",
-    },
-    {
+  {
+    id: 1,
+    nombre: "Camiseta de Argentina",
+    precio: 20000,
+    img: "imagenes/argentina/argentina titular.jpg",
+  },
+
+  {
+    id: 2,
+    nombre: "Camiseta de Alemania",
+    precio: 15000,
+    img: "imagenes/alemania/alemania titular.jpg",
+  },
+
+  {
+    id: 3,
+    nombre: "Camiseta de Belgica",
+    precio: 16000,
+    img: "imagenes/belgica/belgica titular.jpg",
+  },
+  {
+    id: 4,
+    nombre: "Camiseta de Brasil",
+    precio: 20000,
+    img: "imagenes/brasil/brasil titular.jpg",
+  },
+  {
+    id: 5,
+    nombre: "Camiseta de Ecuador",
+    precio: 12000,
+    img: "imagenes/ecuador/ecuador titular.jpg",
+  },
+  {
+    id: 6,
+    nombre: "Camiseta de Espania",
+    precio: 16000,
+    img: "imagenes/españa/españa titular.jpg",
+  },
+  /*{
       id: 7,
       nombre: "Camiseta de Ghana",
       precio: 10000,
@@ -90,6 +90,5 @@ const listaCamisetas = [
       nombre: "Camiseta de Uruguay",
       precio: 13000,
       img: "imagenes/uruguay/uruguay titular.jpg",
-    },
-  ];
-  
+    },*/
+];

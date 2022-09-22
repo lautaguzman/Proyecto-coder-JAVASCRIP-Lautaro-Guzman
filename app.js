@@ -11,7 +11,7 @@ listaCamisetas.forEach((camisetas) => {
   content.innerHTML = `
   <div class=""> 
   <img src="${camisetas.img}">
-  <h3>${camisetas.nombre}</h3>
+  <h3>${camisetas.nombre} </h3>
   <p>${camisetas.precio}$</p>
   </div> `;
 
@@ -34,10 +34,12 @@ listaCamisetas.forEach((camisetas) => {
 });
 
 verCarrito.addEventListener("click", () => {
+  modalContainer.innerHTML = "";
+  modalContainer.style.display = "flex";
   const modalHeader = document.createElement("div");
   modalHeader.className = "modal-header";
   modalHeader.innerHTML = `
-  <h1 class="modal-header-titulo">Carrito</h1>
+  <h1 class="modal-header-titulo">Tu Compra</h1>
   
   `;
 
@@ -47,5 +49,27 @@ verCarrito.addEventListener("click", () => {
   modalButton.innerText = "x";
   modalButton.className = "modal-header-button";
 
+  modalButton.addEventListener("click", () => {
+    modalContainer.style.display = "none";
+  });
+
   modalHeader.append(modalButton);
+
+  carrito.forEach((camisetas) => {
+    let carritoContent = document.createElement("div");
+    carritoContent.className = "modal-content";
+    carritoContent.innerHTML = `
+    <img src="${camisetas.img}">
+    <h3>${camisetas.nombre} </h3>
+    <p>$${camisetas.precio}</p>`;
+
+    modalContainer.append(carritoContent);
+  });
+
+  const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+
+  const totalTodo = document.createElement("div");
+  totalTodo.className = "total-content";
+  totalTodo.innerHTML = `total a pagar $${total}`;
+  modalContainer.append(totalTodo);
 });

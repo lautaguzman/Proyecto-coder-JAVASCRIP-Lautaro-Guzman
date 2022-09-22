@@ -12,16 +12,19 @@ body {
     min-height: 100vh;
 }
 
+/*--------------TITULO-----------*/
 .titulo-bienvenida {
-    border: solid 1px black;
-    background-color: white;
+    background: linear-gradient(white, rgba(6, 8, 12, 0.80));
     color: black;
-    text-align: center;
-    font-size: 20px;
     margin-bottom: 16px;
     margin-top: 16px;
+    height: 200px;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 30px;
 }
 
+/*-----------------LISTA DE CAMISETAS------------*/
 
 .productos-estilo {
     display: flex;
@@ -55,14 +58,76 @@ body {
 
 }
 
-.tarjeta button{
+.tarjeta button {
     margin-bottom: 30px;
     color: white;
     background-color: black;
     width: 50%;
-} 
+}
 
+/*-------------COMPRA-MODAL----------*/
 
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-titulo {
+    justify-self: start;
+}
+
+.modal-header-button {
+    border: white solid 1px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.modal-container>.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container>div>img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content {
+    font-size: 25px;
+    text-align: center;
+    border: white solid 1px;
+    background-color: red;
+    color: white;
+
+}
 
 /*------------FOOTER-----------*/
 

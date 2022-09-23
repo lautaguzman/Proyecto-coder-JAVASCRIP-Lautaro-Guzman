@@ -92,3 +92,12 @@ const listaCamisetas = [
       img: "imagenes/uruguay/uruguay titular.jpg",
     },*/
 ];
+
+const aJSON = JSON.stringify(listaCamisetas);
+
+localStorage.setItem("camiseta", aJSON);
+
+localStorage.getItem("camiseta");
+
+console.log(JSON.parse(aJSON));
+  

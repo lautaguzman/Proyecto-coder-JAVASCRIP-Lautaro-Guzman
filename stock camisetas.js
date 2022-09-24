@@ -93,11 +93,7 @@ const listaCamisetas = [
     },*/
 ];
 
-const aJSON = JSON.stringify(listaCamisetas);
+localStorage.setItem("camiseta", JSON.stringify(listaCamisetas));
 
-localStorage.setItem("camiseta", aJSON);
-
-localStorage.getItem("camiseta");
-
-console.log(JSON.parse(aJSON));
-  
+listaCamisetas = JSON.parse(localStorage.getItem("camiseta"));
+console.log(listaCamisetas);

@@ -11,14 +11,15 @@ listaCamisetas.forEach((camisetas) => {
   content.innerHTML = `
   <div class=""> 
   <img src="${camisetas.img}">
-  <h3>${camisetas.nombre} </h3>
-  <p>${camisetas.precio}$</p>
+  <h3 class="text-capitalize fst-italic text-decoration-underline">${camisetas.nombre} </h3>
+  <p class="text-warning  fw-bold fs-4">${camisetas.precio}$</p>
   </div> `;
 
   stock.append(content);
 
   const botonComprar = document.createElement("button");
-  botonComprar.innerText = "Comprar";
+  botonComprar.className = "btn btn-primary";
+  botonComprar.innerText = "Agregar al carrito";
 
   content.append(botonComprar);
 
@@ -46,8 +47,8 @@ verCarrito.addEventListener("click", () => {
   modalContainer.append(modalHeader);
 
   const modalButton = document.createElement("h1");
-  modalButton.innerText = "x";
-  modalButton.className = "modal-header-button";
+  modalButton.innerText = "";
+  modalButton.className = "btn-close btn-close-white aria-label=Close";
 
   modalButton.addEventListener("click", () => {
     modalContainer.style.display = "none";
@@ -70,6 +71,6 @@ verCarrito.addEventListener("click", () => {
 
   const totalTodo = document.createElement("div");
   totalTodo.className = "total-content";
-  totalTodo.innerHTML = `total a pagar $${total}`;
+  totalTodo.innerHTML = `total hasta el momento$${total}`;
   modalContainer.append(totalTodo);
 });

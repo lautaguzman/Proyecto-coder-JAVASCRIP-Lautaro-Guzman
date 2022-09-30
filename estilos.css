@@ -35,30 +35,20 @@ body {
 
 }
 
+
 .tarjeta {
     text-align: center;
-    border: 1px black solid;
     margin-top: 20px;
     margin-bottom: 20px;
-
-
 }
 
-.tarjeta img {
-    width: 340px;
-    height: 350px;
-}
-
-.tarjeta h3 {
+.tarjeta h5 {
     background-color: black;
     color: white;
     text-align: center;
     margin-bottom: 30px;
     margin: 25px;
 }
-
-
-
 
 /*-------------COMPRA-MODAL----------*/
 
@@ -117,6 +107,12 @@ body {
     color: white;
 
 }
+
+/*------------- quitar producto--------*/
+.delete-product {
+    cursor: pointer;
+}
+
 
 /*------------FOOTER-----------*/
 

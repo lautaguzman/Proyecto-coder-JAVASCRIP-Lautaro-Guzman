@@ -113,6 +113,20 @@ body {
     cursor: pointer;
 }
 
+/*------------cantidad de productos---------
+.cantidad-carrito {
+    background-color: red;
+    color: green;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
+*/
+
 
 /*------------FOOTER-----------*/
 

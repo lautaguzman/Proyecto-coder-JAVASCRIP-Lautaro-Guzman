@@ -138,6 +138,13 @@ listaCamisetas.forEach((camisetas) => {
   content.append(botonComprar);
 
   botonComprar.addEventListener("click", () => {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Producto agregado",
+      showConfirmButton: false,
+      timer: 1500,
+    });
     const repetir = carrito.some(
       (repeatProduct) => repeatProduct.id === camisetas.id
     );

@@ -45,9 +45,14 @@ const pintarCarrito = () => {
   totalTodo.className = "total-content";
   totalTodo.innerHTML = `total hasta el momento$${total}`;
   modalContainer.append(totalTodo);
-};
-verCarrito.addEventListener("click", pintarCarrito);
 
+  const botonCompra = document.createElement("div");
+  botonCompra.innerHTML = `
+  <a class="btn btn-primary btn-sm" href="/page/formulario.html" role="button">Finalizar Compra</a>`;
+  modalContainer.append(botonCompra);
+};
+
+verCarrito.addEventListener("click", pintarCarrito);
 const quitarProducto = () => {
   const founId = carrito.find((element) => element.id);
 

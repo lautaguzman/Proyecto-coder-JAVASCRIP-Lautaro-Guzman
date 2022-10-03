@@ -19,32 +19,33 @@
   <body>
     <div class="titulo-bienvenida">
       <p>Bienvenido al sitio de camisetas del mundial qatar 2022</p>
+
+      <nav class="navbar mt-2 mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="imagenes/carrito.jpg"
+              alt=""
+              width="60"
+              height="60"
+              id="verCarrito"
+              class="ver-carrito"
+          /></a>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="seleccion"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </nav>
     </div>
-
-    <nav class="navbar navbar-dark bg-black mt-2 mb-3">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="imagenes/carrito.jpg"
-            alt=""
-            width="60"
-            height="60"
-            id="verCarrito"
-            class="ver-carrito"
-        /></a>
-
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="seleccion"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-      </div>
-    </nav>
-
     <div id="productos" class="productos-estilo"></div>
     <div id="modal-container" class="modal-container"></div>
 
@@ -58,14 +59,10 @@
         <i><a href="https://twitter.com/?lang=es">Twitter</a></i>
         <i><a href="https://www.youtube.com/">Youtube</a></i>
       </div>
-
       <div class="footer__copy">
         <p>Qatar 2022 / todos los derechos reservados</p>
       </div>
     </footer>
-    <script src="/app.js"></script>
-    <script src="/carrito.js"></script>
-    <script src="/sweet alert.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -73,5 +70,8 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="/app.js"></script>
+    <script src="/carrito.js"></script>
+    <script src="/sweet alert.js"></script>
   </body>
 </html>

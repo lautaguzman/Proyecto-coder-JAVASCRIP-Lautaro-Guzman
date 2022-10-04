@@ -7,7 +7,7 @@ const modalContainer = document.getElementById("modal-container");
 const listaCamisetas = [
   {
     id: 1,
-    nombre: "Argentina",
+    nombre: "argentina",
     precio: 20000,
     img: "imagenes/argentina/argentina titular.jpg",
     cantidad: 1,
@@ -15,7 +15,7 @@ const listaCamisetas = [
 
   {
     id: 2,
-    nombre: "Alemania",
+    nombre: "alemania",
     precio: 15000,
     img: "imagenes/alemania/alemania titular.jpg",
     cantidad: 1,
@@ -23,49 +23,49 @@ const listaCamisetas = [
 
   {
     id: 3,
-    nombre: "Belgica",
+    nombre: "belgica",
     precio: 16000,
     img: "imagenes/belgica/belgica titular.jpg",
     cantidad: 1,
   },
   {
     id: 4,
-    nombre: "Brasil",
+    nombre: "brasil",
     precio: 20000,
     img: "imagenes/brasil/brasil titular.jpg",
     cantidad: 1,
   },
   {
     id: 5,
-    nombre: "Ecuador",
+    nombre: "ecuador",
     precio: 12000,
     img: "imagenes/ecuador/ecuador titular.jpg",
     cantidad: 1,
   },
   {
     id: 15,
-    nombre: "Uruguay",
+    nombre: "uruguay",
     precio: 13000,
     img: "imagenes/uruguay/uruguay titular.jpg",
     cantidad: 1,
   },
   {
     id: 7,
-    nombre: "Ghana",
+    nombre: "ghana",
     precio: 10000,
     img: "imagenes/ghana/ghana titular.jpg",
     cantidad: 1,
   },
   {
     id: 11,
-    nombre: "Mexico",
+    nombre: "mexico",
     precio: 9000,
     img: "imagenes/mexico/mexico titular.jpg",
     cantidad: 1,
   },
   {
     id: 9,
-    nombre: "Japon",
+    nombre: "japon",
     precio: 13000,
     img: "imagenes/japon/japon titular.jpg",
     cantidad: 1,
@@ -73,7 +73,7 @@ const listaCamisetas = [
 
   {
     id: 6,
-    nombre: "Espania",
+    nombre: "espania",
     precio: 16000,
     img: "imagenes/españa/españa titular.jpg",
     cantidad: 1,
@@ -81,14 +81,14 @@ const listaCamisetas = [
 
   {
     id: 10,
-    nombre: "Marruecos",
+    nombre: "marruecos",
     precio: 8000,
     img: "imagenes/marruecos/marruecos titular.jpg",
     cantidad: 1,
   },
   {
     id: 12,
-    nombre: "Senegal",
+    nombre: "senegal",
     precio: 8000,
     img: "imagenes/senegal/senegal titular.jpg",
     cantidad: 1,
@@ -115,9 +115,11 @@ const listaCamisetas = [
       },*/
 ];
 
+const productos = ([id, nombre, precio, img, cantidad] = listaCamisetas);
+
 let carrito = [];
 
-listaCamisetas.forEach((camisetas) => {
+productos.forEach((camisetas) => {
   let content = document.createElement("div");
   content.className = "tarjeta";
   content.innerHTML = ` 

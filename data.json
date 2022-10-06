@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "nombre": "argentina",
+    "precio": 20000,
+    "img": "imagenes/argentina/argentina titular.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 2,
+    "nombre": "alemania",
+    "precio": 15000,
+    "img": "imagenes/alemania/alemania titular.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 3,
+    "nombre": "belgica",
+    "precio": 16000,
+    "img": "imagenes/belgica/belgica titular.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 4,
+    "nombre": "brasil",
+    "precio": 20000,
+    "img": "imagenes/brasil/brasil titular.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 5,
+    "nombre": "ecuador",
+    "precio": 12000,
+    "img": "imagenes/ecuador/ecuador titular.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 15,
+    "nombre": "uruguay",
+    "precio": 13000,
+    "img": "imagenes/uruguay/uruguay titular.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 7,
+    "nombre": "ghana",
+    "precio": 10000,
+    "img": "imagenes/ghana/ghana titular.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 11,
+    "nombre": "mexico",
+    "precio": 9000,
+    "img": "imagenes/mexico/mexico titular.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 9,
+    "nombre": "japon",
+    "precio": 13000,
+    "img": "imagenes/japon/japon titular.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 6,
+    "nombre": "espania",
+    "precio": 16000,
+    "img": "imagenes/españa/españa titular.jpg",
+    "cantidad": 1
+  },
+
+  {
+    "id": 10,
+    "nombre": "marruecos",
+    "precio": 8000,
+    "img": "imagenes/marruecos/marruecos titular.jpg",
+    "cantidad": 1
+  },
+  {
+    "id": 12,
+    "nombre": "senegal",
+    "precio": 8000,
+    "img": "imagenes/senegal/senegal titular.jpg",
+    "cantidad": 1
+  }
+]

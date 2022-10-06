@@ -26,6 +26,25 @@ body {
     font-size: 30px;
 }
 
+
+/*-------------------CONTADOR DE DIAS--------------*/
+
+
+.cuenta {
+    text-align: center;
+    background-image: url(/imagenes/cuenta\ regresiva.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    
+
+
+}
+
+
+
+
+
+
 /*-----------------LISTA DE CAMISETAS------------*/
 
 .productos-estilo {

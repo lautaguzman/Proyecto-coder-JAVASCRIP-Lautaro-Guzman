@@ -19,13 +19,16 @@
   <body>
     <div class="atras"><a href="/index.html">atras</a></div>
 
-    <form id="formulario">
+    <h1>Direccion de envio</h1>
+
+    <form id="form">
       <div class="row mb-3">
         <input
           type="text"
           class="form-control"
-          placeholder="Nombre"
+          placeholder="Nombre Completo"
           aria-label="First name"
+          id="name-form"
           required
         />
       </div>
@@ -36,39 +39,58 @@
           class="form-control"
           placeholder="Apellido"
           aria-label="Last name"
+          id="apellido-form"
           required
         />
       </div>
       <div class="row mb-3">
-        <label for="inputEmail4" class="form-label"></label>
         <input
           type="email"
           class="form-control"
-          id="inputEmail4"
+          id="email-form"
           placeholder="Correo Electronico"
+          name="email"
           required
         />
       </div>
       <div class="row mb-3">
-        <label for="inputAddress" class="form-label"></label>
         <input
           type="text"
           class="form-control"
-          id="inputAddress"
+          id="inputAddress-form"
+          name="inputAddress"
           placeholder="Direccion de envio"
           required
         />
       </div>
       <div class="row mb-3">
-        <textarea
-          name="message"
-          id="message"
-          cols="10"
-          rows="5"
-          placeholder="Dejanos tu comentario"
-        ></textarea>
+        <input
+          type="text"
+          class="form-control"
+          id="ciudad-form"
+          name="ciudad"
+          placeholder="Ciudad"
+          required
+        />
       </div>
-      <button type="submit" class="btn btn-primary">enviar</button>
+      <div class="row mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="provincia-form"
+          name="provincia"
+          placeholder="provincia"
+          required
+        />
+      </div>
+      <button
+        id="btnEnviar"
+        class="btn btn-primary"
+        type="submit"
+        value="enviar"
+      >
+        enviar
+      </button>
     </form>
 
     <footer class="footer">
@@ -86,6 +108,7 @@
       </div>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -93,6 +116,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/app.js"></script>
+    <script src="/carrito.js"></script>
     <script src="/formulario.js"></script>
   </body>
 </html>

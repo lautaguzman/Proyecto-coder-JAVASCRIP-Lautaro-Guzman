@@ -4,7 +4,8 @@ const verCarrito = document.getElementById("verCarrito");
 
 const modalContainer = document.getElementById("modal-container");
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("stock")) || [];
+
 
 const productos = document.querySelector("#productos");
 fetch("/data.json")
@@ -32,7 +33,7 @@ fetch("/data.json")
 
       botonComprar.addEventListener("click", () => {
         Swal.fire({
-          position: "top-end",
+          position: "center",
           icon: "success",
           title: "Producto agregado",
           showConfirmButton: false,
@@ -57,6 +58,12 @@ fetch("/data.json")
           });
         }
         console.log(carrito);
+        local();
       });
     });
   });
+
+const local = () => {
+  localStorage.setItem("stock", JSON.stringify(carrito))
+}
+

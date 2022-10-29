@@ -1,123 +1,114 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(white, rgba(6, 8, 12, 0.80));
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background: linear-gradient(white, rgba(6, 8, 12, 0.8));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*--------------TITULO-----------*/
 
-
 .titulo-bienvenida {
-    background: linear-gradient(rgba(6, 8, 12, 0.80), rgba(6, 8, 12, 0.80)), url(imagenes/fondo\ nuevo.jpg);
-    color: white;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    height: 200px;
-    text-align: center;
-    padding-top: 55px;
-    font-size: 30px;
+  background: linear-gradient(rgba(6, 8, 12, 0.8), rgba(6, 8, 12, 0.8)),
+    url(imagenes/fondo\ nuevo.jpg);
+  color: white;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  height: 200px;
+  text-align: center;
+  padding-top: 55px;
+  font-size: 30px;
 }
-
 
 /*-------------------CONTADOR DE DIAS--------------*/
 
-
 .cuenta {
-    text-align: center;
-    background-image: url(/imagenes/cuenta\ regresiva.jpg);
-    background-repeat: no-repeat;
-    color: white;
-    
-
-
+  text-align: center;
+  background-image: url(/imagenes/cuenta\ regresiva.jpg);
+  background-repeat: no-repeat;
+  color: white;
 }
-
-
-
-
-
 
 /*-----------------LISTA DE CAMISETAS------------*/
 
 .productos-estilo {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-
 .tarjeta {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .tarjeta h5 {
-    background-color: black;
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-    margin: 25px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  margin: 25px;
 }
 
 /*-------------COMPRA-MODAL----------*/
 
 .modal-container {
-    width: 80%;
-    margin: 0 10%;
-    max-height: 88vh;
-    color: black;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*for the top*/
-    position: fixed;
-    overflow: auto;
-    z-index: 9;
-    top: 12vh;
-    scrollbar-color: none;
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: black;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*for the top*/
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
 }
 
 .modal-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .modal-header {
-    display: flex;
-    justify-content: space-around;
-    background-color: #0a0909;
-    color: #fff;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0909;
+  color: #fff;
+  width: 100%;
 }
 
 .modal-header-titulo {
-    justify-self: start;
+  background-color: black;
+  color: white;
+  justify-self: start;
 }
 
-.modal-container>.modal-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    margin: 10px;
+.modal-container > .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
 }
 
-.modal-container>div>img {
-    height: 120px;
-    width: 120px;
+.modal-container > div > img {
+  height: 120px;
+  width: 120px;
 }
 
+/*
 .total-content {
     font-size: 25px;
     text-align: center;
@@ -126,31 +117,30 @@ body {
     color: white;
 
 }
-
+*/
 /*------------- quitar producto--------*/
 .delete-product {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 /*------------FOOTER-----------*/
 
 .footer {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .footer__info {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .footer__redes {
-    text-align: center;
-    font-size: 15px;
+  text-align: center;
+  font-size: 15px;
 }
 
 .footer__copy {
-    color: white;
-    text-align: center;
-    font-size: 15px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
 }

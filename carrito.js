@@ -65,11 +65,6 @@ const pintarCarrito = () => {
     "p-3 mb-2 bg-info text-dark text-capitalize fw-bold font-monospace";
   totalTodo.innerHTML = `total hasta el momento$${total}`;
   modalContainer.append(totalTodo);
-
-  const botonCompra = document.createElement("div");
-  botonCompra.innerHTML = `
-  <a class="btn btn-primary btn-sm" href="/page/formulario.html" role="button">Finalizar Compra</a>`;
-  modalContainer.append(botonCompra);
 };
 
 verCarrito.addEventListener("click", pintarCarrito);

@@ -8,7 +8,7 @@ let carrito = JSON.parse(localStorage.getItem("stock")) || [];
 
 
 const productos = document.querySelector("#productos");
-fetch("./data.json")
+fetch(`./data.json`)
   .then((resp) => resp.json())
   .then((data) => {
     data.forEach((camisetas) => {
